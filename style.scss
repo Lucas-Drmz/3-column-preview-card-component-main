@@ -1,0 +1,99 @@
+$very-light-gray: hsl(0, 0%, 95%);
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$sedan-color : hsl(31, 77%, 52%);
+$suv-color: hsl(184, 100%, 22%); 
+$luxury_color: hsl(179, 100%, 13%);
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $very-light-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.card-item {
+    padding: 5vw;
+
+    h2 {
+        color: $very-light-gray;
+        font-family: Big Shoulders Display, sans-serif;
+    }
+
+    p {
+        color: $transparent-white;
+        font-family: Lexend Deca, sans-serif;
+    }
+
+    button {
+        background-color: $very-light-gray;
+        border: none;
+        border-radius: 20px;
+        padding: 3vw;
+        font-family: Lexend Deca, sans-serif;
+    }
+
+    button:hover {
+        border: 2px solid $very-light-gray;
+        color: $very-light-gray;
+    }
+}
+
+.sedan {
+    background-color: $sedan-color;
+    border-radius: 10px 10px 0 0;
+
+    button {
+        color: $sedan-color;
+    }
+
+    button:hover {
+        background-color: $sedan-color;
+    }
+}
+
+.suv {
+    background-color: $suv-color;
+
+    button {
+        color: $suv-color;
+    }
+
+    button:hover {
+        background-color: $suv-color;
+    }
+}
+
+.luxury {
+    background-color: $luxury_color;
+    border-radius: 0 0 10px 10px;
+
+    button {
+        color: $luxury_color;
+    }
+
+    button:hover {
+        background-color: $luxury_color;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a {
+        color: hsl(228, 45%, 44%); 
+    }
+}
