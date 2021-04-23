@@ -14,27 +14,33 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
 }
 
 .container {
     width: fit-content;
-    height: fit-content;
+    height: 100vh;
     margin-left: 5vw;
     margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-item {
-    padding: 5vw;
+    padding: 10vw;
 
     h2 {
         color: $very-light-gray;
         font-family: Big Shoulders Display, sans-serif;
+        text-transform: uppercase;
+        font-size: 10vw;
     }
 
     p {
         color: $transparent-white;
         font-family: Lexend Deca, sans-serif;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
     }
 
     button {
@@ -43,6 +49,8 @@ body {
         border-radius: 20px;
         padding: 3vw;
         font-family: Lexend Deca, sans-serif;
+        font-weight: bold;
+        font-size: 4vw;
     }
 
     button:hover {
