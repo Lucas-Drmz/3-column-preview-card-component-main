@@ -5,6 +5,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #f2f2f2;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,13 +16,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 100vh;
   margin-left: 5vw;
   margin-right: 5vw;
   display: -webkit-box;
@@ -38,6 +40,7 @@ body {
 
 .card-item {
   padding: 10vw;
+  position: relative;
 }
 
 .card-item h2 {
@@ -50,8 +53,8 @@ body {
 .card-item p {
   color: rgba(255, 255, 255, 0.75);
   font-family: Lexend Deca, sans-serif;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: -1vh;
+  margin-bottom: 3.5vh;
 }
 
 .card-item button {
@@ -62,6 +65,8 @@ body {
   font-family: Lexend Deca, sans-serif;
   font-weight: bold;
   font-size: 4vw;
+  position: absolute;
+  bottom: 5vw;
 }
 
 .card-item button:hover {
@@ -114,5 +119,61 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (min-width: 400px) {
+  .card-item p {
+    font-size: 5vw;
+  }
+  .card-item button {
+    border-radius: 25px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .card-item h2 {
+    font-size: 6vw;
+  }
+  .card-item p {
+    font-size: 4vw;
+    margin-bottom: 10vw;
+  }
+  .card-item button {
+    border-radius: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  .card-item {
+    padding: 2vw;
+    height: 30vw;
+  }
+  .card-item h2 {
+    font-size: 3.5vw;
+  }
+  .card-item p {
+    margin-top: 1vw;
+    font-size: 1.5vw;
+  }
+  .card-item button {
+    padding: 1vw;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    bottom: 3vw;
+  }
+  .sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
